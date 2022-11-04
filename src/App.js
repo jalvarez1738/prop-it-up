@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <fieldset>
-        <legend>PropItUp.jsx</legend>
-        <PropItUp />
+        <legend>PuttingItTogether.jsx</legend>
+        <PropItUp firstName="Jim" lastName="Jones" age={44} hairColor="black"/>
+        <PropItUp firstName="Cam" lastName="'ron" age={43} hairColor="blonde"/>
+        <PropItUp firstName="JUelz" lastName="Santana" age={42} hairColor="brown"/>
       </fieldset>
     </div>
   );

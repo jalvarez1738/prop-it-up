@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
     
-    
-class PropItUp extends Component {
+export default class PropItUp extends Component {
+
     render() {
+    console.log(this.props)
+    const {firstName, lastName, age, hairColor} = this.props
         return (
-            <div>
-                <h3>{ this.props.firstName }</h3>
-                <h3>{ this.props.lastName }</h3>
-                <h3>{ this.props.age }</h3>
-                <h3>{ this.props.hairColor }</h3>
-            </div>
+            <fieldset>
+                <h3>{firstName} {lastName}</h3>
+                <h3>Age: {age}</h3>
+                <h3>Hair color: {hairColor}</h3>
+                <button onClick={() => {age++}}>Happy Birthday {firstName}</button>
+            </fieldset>
         )
     }
 }
-    
-export default PropItUp;
